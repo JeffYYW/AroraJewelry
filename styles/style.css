@@ -52,7 +52,7 @@ body {
 }
 
 header {
-    background-image: url("../assets/group4.png");
+    background-image: url("../assets/headerDesktop.png");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -104,6 +104,7 @@ header {
     font-family: 'Italiana', serif;
     line-height: 0.87;
     white-space: nowrap;
+    font-weight: 100;
 }
 
 .titleText span {
@@ -149,6 +150,15 @@ header {
 
 .icons li a {
     color: white;
+}
+
+.hamburger {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    font-size: 40px;
+    display: none;
+
 }
 
 /* ***************** END HEADER ***************** */
@@ -352,6 +362,10 @@ header {
     margin-bottom: 1%;
 }
 
+.contactsNav .blogLi {
+    display: none;
+}
+
 .newsletter {
     /* border: 2px solid yellow; */
     width: 50%;
@@ -389,6 +403,14 @@ header {
     color: #fafafa;
     float: left;
     /* border: 2px solid yellow; */
+}
+
+.newsletter form input[type="text"]::placeholder {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
 }
 
 .newsletter form input[type="submit"] {
@@ -508,6 +530,8 @@ footer p {
         width: 100%;
     }
 
+    
+
     .materialsTextContainer h2,
     .matchTextContainer h2 {
         text-align: center;
@@ -558,22 +582,35 @@ footer p {
     .newsletter form input[type="submit"] {
         width: 100%;
         float: none;
+        font-size: 25px;
         /* display: block; */
     }
 
     .contactInfo {
         /* border: 2px solid yellow; */
+        margin: 50px 0;
         width: 100%;
         /* float: right;     */
         text-align: center;   
         float: none; 
     }
 
+    .contactInfo h3 {
+        font-family: 'Italiana', serif;
+    }
+
+    .contactInfo p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: 768px) {
 
-    
+    .iconsContainer {
+        right: 10%;
+    }
 
     .eventsItem:nth-child(2) {
         margin-left: 0;
@@ -625,13 +662,52 @@ footer p {
         font-size: 1.08125rem;
     }
 
+    .mainNav,
+    .iconsContainer {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
     .innerWrapper {
         max-width: 90%;
     }
 
+    .materialsImg,
+    .matchImg {
+        height: 224px;
+        overflow: hidden;
+        /* object-fit: contain; */
+    }
+
+    /* .matchImg {
+        background-position: 0 300px;
+    } */
+
+    .contactsNav {
+        text-transform: initial;
+    }
+
     .contactsNav li {
-        margin: 3% 3%;
+        margin: 3% 0 3% 3%;
+        font-family: 'Lato', sans-serif;
         /* white-space: nowrap; */
+    }
+
+    .contactsNav .blogLi {
+        display: inline-block;
+    }
+
+    .contactsNav .galleryLi {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        background-position: -5%;
     }
 }
 

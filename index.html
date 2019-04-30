@@ -8,7 +8,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
         integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
         crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Italiana|Lato:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Italiana|Lato:300|Roboto:300" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -16,10 +16,12 @@
         <header>
             <div class="innerWrapper">
                 <nav class="mainNav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </nav>
                 <div class="titleContainer clearfix">
                     <div class="titleText">
@@ -43,13 +45,16 @@
                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                 </nav>
             </div>
+            <div class="hamburger">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
         </header>
         <main>
             <section class="handCraftedSection">
                 <div class="innerWrapper">
                     <div class="handCraftedContainer clearfix">
                         <div class="handCraftedImg">
-                            <img src="assets/image6.png" alt="close-up of hands trying on various rings">
+                            <img src="assets/handCrafted.png" alt="close-up of hands trying on various rings">
                         </div>
                         <div class="handCraftedContent">
                             <h2>hand crafted</h2>
@@ -63,9 +68,9 @@
                 <div class="innerWrapper">
                     <h2>latest collection</h2>
                     <div class="collectionImgContainer clearfix">
-                        <img src="assets/image-2_2.png" alt="close-up of hanging gold and silver necklaces">
-                        <img src="assets/image-4.png" alt="close-up of a gold ring crossed wrapped around another gold ring">
-                        <img src="assets/image-3.png" alt="close-up of pearl and golden earrings">
+                        <img src="assets/latestCollectionOne.png" alt="close-up of hanging gold and silver necklaces">
+                        <img src="assets/latestCollectionTwo.png" alt="close-up of a gold ring crossed wrapped around another gold ring">
+                        <img src="assets/latestCollectionThree.png" alt="close-up of pearl and golden earrings">
                     </div>
                 </div>
             </section>
@@ -87,7 +92,7 @@
             </section>
             <section class="materialsSection clearfix">
                 <div class="materialsImg">
-                    <img src="assets/image-2.png" alt="close-up of woman's neck with two gold necklaces">
+                    <img src="assets/materialsImage.png" alt="close-up of woman's neck with two gold necklaces">
                 </div>
                 <div class="materialsTextContainer">
                     <h2>sustainable materials</h2>
@@ -97,7 +102,7 @@
             </section>
             <section class="matchSection clearfix">
                 <div class="matchImg">
-                    <img src="assets/image-2-copy.png" alt="close-up of a hand wearing a rings on both the ring finger and pinky">
+                    <img src="assets/matchImage.png" alt="close-up of a hand wearing a rings on both the ring finger and pinky">
                 </div>
                 <div class="matchTextContainer">
                     <h2>mix & match</h2>
@@ -110,16 +115,17 @@
             <section class="contactsSection">
                 <div class="innerWrapper clearfix">
                     <nav class="contactsNav">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">gallery</a></li>
-                        <li><a href="#">contacts</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li class="blogLi"><a href="#">Blog</a></li>
+                        <li class="galleryLi"><a href="#">Gallery</a></li>
+                        <li><a href="#">Contacts</a></li>
                     </nav>
                     <div class="newsletter">
                         <h3>stay updated</h3>
                         <p>Subscribe to our newsletter to stay updated</p>
                         <form action="" class="clearfix">
-                            <input type="text">
+                            <input type="text" placeholder="email address">
                             <input type="submit" value="SUBSCRIBE">
                         </form>
                     </div>
@@ -155,3 +161,5 @@
 <!-- add ul -->
 
 <!-- challenge - sections breaking too early, positioning background image for mobile -->
+
+<!-- add footer placeholder -->
