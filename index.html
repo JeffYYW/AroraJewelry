@@ -39,10 +39,10 @@
             
                 </div> -->
                 <nav class="icons">
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i aria-hidden="true"></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-snapchat-ghost" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                 </nav>
             </div>
             <div class="hamburger">
@@ -125,7 +125,8 @@
                         <h3>stay updated</h3>
                         <p>Subscribe to our newsletter to stay updated</p>
                         <form action="" class="clearfix">
-                            <input type="text" placeholder="email address">
+                            <label for="email" class="visibilityHidden"></label>
+                            <input type="email" placeholder="email address" id="email">
                             <input type="submit" value="SUBSCRIBE">
                         </form>
                     </div>
@@ -163,3 +164,5 @@
 <!-- challenge - sections breaking too early, positioning background image for mobile -->
 
 <!-- add footer placeholder -->
+
+<!-- challenge and win, change nav li -->
