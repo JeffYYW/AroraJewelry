@@ -6,6 +6,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
+/***********************************************************
+		    		  GENERAL STYLES
+***********************************************************/
 
 body, h1, h2, h3, nav, ul, li, span, p, input, button  {
     margin: 0;
@@ -39,8 +42,11 @@ button {
     text-transform: uppercase;
 }
 
-.visibilityHidden {
-    visibility: hidden;
+.handCraftedSection,
+.latestCollectionSection,
+.eventsSection,
+.contactsSection {
+    padding: 5% 0;
 }
 
 /***********************************************************
@@ -152,7 +158,6 @@ header {
 
 .handCraftedSection {
     width: 100%;
-    padding: 5% 0;
     background-color: #14171f;
 }
 
@@ -175,6 +180,7 @@ header {
     font-family: 'Italiana', serif;
     font-size: 3.1875rem;
     text-transform: uppercase;
+    line-height: 40px;  /* to have h2 match height of adjacent img*/
 }
 
 .handCraftedContent p {
@@ -190,7 +196,6 @@ header {
 
 .latestCollectionSection {
     width: 100%;
-    padding: 5% 0;
     background-color: #201e1f;
 }
 
@@ -221,7 +226,6 @@ header {
 
 .eventsSection {
     width: 100%;
-    padding: 5% 0;
     background-color: #14171f;
 }
 
@@ -322,7 +326,6 @@ header {
 
 .contactsSection {
     width: 100%;
-    padding: 5% 0;
     color: #fff;
     background-color: #14171f;
 }
@@ -432,11 +435,11 @@ footer {
 }
 
 footer p {
-    color: #fff;
-    text-align: center;
+    padding: 1% 0;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
-    padding: 1% 0;
+    color: #fff;
+    text-align: center;
 }
 
 /***********************************************************
@@ -444,7 +447,6 @@ footer p {
 ***********************************************************/
 
 @media (min-width: 1600px) {
-
     .innerWrapper {
       max-width: 1600px;
     }
@@ -500,7 +502,6 @@ footer p {
 }
 
 @media (max-width: 1020px) {
-
     .titleText h1 {
         font-size: 6.25rem;
     }
@@ -510,9 +511,9 @@ footer p {
     }
 
     .handCraftedImg {
-        float: none;
         margin-right: 0;
         margin-bottom: 8%;
+        float: none;
     }
 
     .handCraftedContent {
@@ -522,24 +523,22 @@ footer p {
     }
 
     .handCraftedContent p {
-        text-align: initial;
         margin: 8% 0;
+        text-align: initial;
     }
 
     .materialsTextContainer,
     .materialsImg,
     .matchTextContainer,
     .matchImg {
-        float: none;
         width: 100%;
+        float: none;
     }
-
-    
 
     .materialsTextContainer h2,
     .matchTextContainer h2 {
-        text-align: center;
         margin-bottom: 5%;
+        text-align: center;
     }
 
     .materialsTextContainer,
@@ -550,18 +549,15 @@ footer p {
 
     .materialsTextContainer p,
     .matchTextContainer p {
-        /* margin: 0 auto; */
-        /* text-align: center; */
-        text-align: initial;
         margin-bottom: 10%;
+        text-align: initial;
     }
 
     .contactsNav {
-        /* border: 2px solid yellow; */
         width: 100%;
-        text-align: center;
         float: none;
         margin-top: 5%;
+        text-align: center;
     }
 
     .contactsNav li {
@@ -570,34 +566,29 @@ footer p {
     }
 
     .newsletter {
-        /* border: 2px solid yellow; */
-        width: 100%;    
-        text-align: center;
+        width: 100%;   
         margin: 10% 0;
-        float: none;
+        float: none; 
+        text-align: center;
     }
 
     .newsletter form input[type="email"] {
         width: 100%;
-        float: none;
         margin-bottom: 3%;
-        /* display: block; */
+        float: none;
     }
 
     .newsletter form input[type="submit"] {
         width: 100%;
         float: none;
         font-size: 25px;
-        /* display: block; */
     }
 
     .contactInfo {
-        /* border: 2px solid yellow; */
-        margin: 50px 0;
         width: 100%;
-        /* float: right;     */
-        text-align: center;   
+        margin: 50px 0;
         float: none; 
+        text-align: center;   
     }
 
     .contactInfo h3 {
@@ -608,7 +599,6 @@ footer p {
         font-family: 'Roboto', sans-serif;
         font-size: 14px;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -634,9 +624,9 @@ footer p {
     }
 
     .eventsItem {
-        float: none;
         width: 100%;
         margin-bottom: 10%;
+        float: none;
     }
 
     .latestCollectionSection h2 {
@@ -644,8 +634,8 @@ footer p {
     }
 
     .collectionImgContainer img {
-        float: left;
         width: calc(100% / 2 - 2%);
+        float: left;
     }
 
     .collectionImgContainer img:nth-child(2) {
@@ -670,8 +660,8 @@ footer p {
     }
 
     .titleText h1 {
-        font-size: 3.9rem;
         padding-top: 50px;
+        font-size: 3.9rem;
     }
 
     .titleText h3 {
@@ -695,12 +685,7 @@ footer p {
     .matchImg {
         height: 224px;
         overflow: hidden;
-        /* object-fit: contain; */
     }
-
-    /* .matchImg {
-        background-position: 0 300px;
-    } */
 
     .newsletter h3,
     .newsletter form input[type="submit"],
@@ -720,7 +705,6 @@ footer p {
     .contactsNav li {
         margin: 3% 0 3% 3%;
         font-family: 'Lato', sans-serif;
-        /* white-space: nowrap; */
     }
 
     .contactsNav .blogLi {
@@ -737,16 +721,3 @@ footer p {
         background-position: -5%;
     }
 }
-
-/* h2 */
-/* 1.875rem */
-
-/* 80% innerWrapper */
-/* combine section padding */
-/* change pixels to ems */
-
-/* add hard pixel wrapper */
-/* top of hand crafted content h2 does not match its adjacent picture */
-
-/* position absolute the icons to make them stick to the bottom
-of the header*/
