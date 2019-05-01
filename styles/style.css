@@ -129,7 +129,7 @@ header {
     text-align: right;
 }
 
-.icons svg {
+.icons i {
     color: #fff;
     font-size: 1.2em;
 }
@@ -248,10 +248,10 @@ header {
     color: #fff;
 }
 
-.eventsItem svg {
+.eventsItem i {
     display: block;
-    margin: 0 auto;
     font-size: 5em;
+    text-align: center;
     color: #faba63;
 }
 
@@ -459,7 +459,7 @@ footer p {
         right: 28%;
     }
 
-    .icons svg {
+    .icons i {
         font-size: 2em;
     }
 
